@@ -23,7 +23,7 @@ Method 1- **findLongestAndSecondLongestCompoundWords()**:
 
                                          
 
-Method 2- **isCompound()**:
+Method 2- **isCompoundWord()**:
 
     - This method is used to check whether a given word is a compound word.
     - It iterates through the characters of the word, splitting it into a prefix and a suffix.
