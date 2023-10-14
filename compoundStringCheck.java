@@ -1,17 +1,7 @@
 import java.io.*;
 import java.util.*;
  public class compoundStringCheck{
-    public static boolean isCompoundWord(String word,Set<String> wordSet)
-    {
-for(int i=1;i<word.length();i++)
-{
-    String prefix=word.substring(0, i);
-    String suffix=word.substring(i);
-    if(wordSet.contains(prefix)&&(wordSet.contains(suffix)||isCompoundWord(suffix, wordSet))){
-        return true;
-    }}
-        return false;
-    }
+   
     public static String[] readFileInputs(String file)
     {
         Set<String> wordSet=new HashSet<>();
@@ -44,6 +34,17 @@ for(int i=1;i<word.length();i++)
             }
         }
         return new String[]{longest,SecondLongest};
+    }
+     public static boolean isCompoundWord(String word,Set<String> wordSet)
+    {
+for(int i=1;i<word.length();i++)
+{
+    String prefix=word.substring(0, i);
+    String suffix=word.substring(i);
+    if(wordSet.contains(prefix)&&(wordSet.contains(suffix)||isCompoundWord(suffix, wordSet))){
+        return true;
+    }}
+        return false;
     }
     public static void main(String[] args) {
        long startTime=System.currentTimeMillis();
