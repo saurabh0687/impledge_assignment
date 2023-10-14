@@ -3,8 +3,9 @@ This Java Program finds the longest and the second longest compound word formed 
 #How it works
 
 
-I divided this problem in to two sub problems - i) To find out whether the given word is compound or not
-                                               ii) To find the longest and the second longest from the founded compound words
+I divided this problem in to two sub problems - 
+   - To find out whether the given word is compound or not
+   - To find the longest and the second longest from the founded compound words
 
                                                
 Method 1- #findLongestAndSecondLongestCompoundWords(String file):
