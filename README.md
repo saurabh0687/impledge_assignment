@@ -7,6 +7,7 @@ I divided this problem in to two sub problems -
    - To find out whether the given word is compound or not
    - To find the longest and the second longest from the founded compound words
 
+
                                                
 Method 1- #findLongestAndSecondLongestCompoundWords(String file):
     - This method takes the file name as input and have ##BufferedReader to read the file
@@ -16,6 +17,7 @@ Method 1- #findLongestAndSecondLongestCompoundWords(String file):
       longest and second longest and return the array of the same
 
       
+
                                          
 Method 2- #isCompound(String word,Set<String> wordSet):
     - This method is used to check whether a given word is a compound word.
@@ -23,6 +25,7 @@ Method 2- #isCompound(String word,Set<String> wordSet):
     - It checks if both the prefix and suffix exist in the wordSet and, if so, returns true.
     - If suffix do not exist in the HashSet then we recursively call our isCompound method for the suffix which breaks it into further prefix and 
       suffix and return true or false accordingly
+
 
 
 
