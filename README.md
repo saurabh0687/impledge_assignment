@@ -11,7 +11,7 @@ I divided this problem in to two sub problems:
 
                                                
 
-Method 1- **findLongestAndSecondLongestCompoundWords(String file)**:
+Method 1- **findLongestAndSecondLongestCompoundWords()**:
 
     - This method takes the file name as input and have ##BufferedReader to read the file
     - After that we create the HashSet of String type as the given file has inputs in the form of Strings
@@ -23,7 +23,7 @@ Method 1- **findLongestAndSecondLongestCompoundWords(String file)**:
 
                                          
 
-Method 2- **isCompound(String word,Set<String> wordSet)**:
+Method 2- **isCompound()**:
 
     - This method is used to check whether a given word is a compound word.
     - It iterates through the characters of the word, splitting it into a prefix and a suffix.
