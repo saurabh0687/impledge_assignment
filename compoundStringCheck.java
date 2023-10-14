@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
  public class compoundStringCheck{
    
-    public static String[] readFileInputs(String file)
+    public static String[] findLongestAndSecondLongestCompoundWords(String file)
     {
         Set<String> wordSet=new HashSet<>();
         String line;
@@ -49,7 +49,7 @@ for(int i=1;i<word.length();i++)
     public static void main(String[] args) {
        long startTime=System.currentTimeMillis();
         String file="Input_01.txt";
-        String [] resultant=readFileInputs(file);
+        String [] resultant=findLongestAndSecondLongestCompoundWords(file);
         System.out.println("Longest Compound word: "+resultant[0]);
         System.out.println("Second Longest Compound word:"+resultant[1]);
         long endTime=System.currentTimeMillis();
